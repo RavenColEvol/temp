@@ -24,7 +24,7 @@ __export(handleIndividualFields_exports, {
   handleIndividualFields: () => handleIndividualFields
 });
 module.exports = __toCommonJS(handleIndividualFields_exports);
-var import_lodash = require("lodash");
+var import_lodash_es = require("lodash-es");
 var import__ = require("../index.cjs");
 var import_generatePseudoEditableField = require("../generators/generatePseudoEditableField.cjs");
 var import_constants = require("./constants.cjs");
@@ -137,7 +137,7 @@ async function handleIndividualFields(eventDetails, elements) {
           );
         elements2.resizeObserver.observe(pseudoEditableField);
       } else if (elementComputedDisplay === "inline") {
-        const onInlineElementInput = (0, import_lodash.throttle)(() => {
+        const onInlineElementInput = (0, import_lodash_es.throttle)(() => {
           const overlayWrapper = visualBuilderContainer2.querySelector(
             ".visual-builder__overlay__wrapper"
           );
@@ -212,7 +212,7 @@ function cleanIndividualFieldResidual(elements) {
     focusedToolbar.innerHTML = "";
   }
 }
-var pasteAsPlainText = (0, import_lodash.debounce)(
+var pasteAsPlainText = (0, import_lodash_es.debounce)(
   (e) => {
     e.preventDefault();
     const clipboardData = e.clipboardData;

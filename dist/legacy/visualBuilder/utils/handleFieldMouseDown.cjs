@@ -24,7 +24,7 @@ __export(handleFieldMouseDown_exports, {
   handleFieldKeyDown: () => handleFieldKeyDown
 });
 module.exports = __toCommonJS(handleFieldMouseDown_exports);
-var import_lodash = require("lodash");
+var import_lodash_es = require("lodash-es");
 var import_generateOverlay = require("../generators/generateOverlay.cjs");
 var import_constants = require("./constants.cjs");
 var import_types = require("./types/index.types.cjs");
@@ -39,7 +39,7 @@ function handleFieldInput(e) {
     throttledFieldSync();
   }
 }
-var throttledFieldSync = (0, import_lodash.throttle)(() => {
+var throttledFieldSync = (0, import_lodash_es.throttle)(() => {
   try {
     const visualBuilderContainer = document.querySelector(
       ".visual-builder__container"

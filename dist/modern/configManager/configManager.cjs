@@ -28,22 +28,22 @@ module.exports = __toCommonJS(configManager_exports);
 var import_deepsignal = require("deepsignal");
 var import_config = require("./config.default.cjs");
 var import_handleUserConfig = require("./handleUserConfig.cjs");
-var import_lodash = require("lodash");
+var import_lodash_es = require("lodash-es");
 var Config = class {
   static replace(userInput = (0, import_config.getUserInitData)()) {
     (0, import_handleUserConfig.handleInitData)(userInput);
   }
   static set(key, value) {
-    if (!(0, import_lodash.has)(this.config.state, key)) {
+    if (!(0, import_lodash_es.has)(this.config.state, key)) {
       throw new Error(`Invalid key: ${key}`);
     }
-    (0, import_lodash.set)(this.config.state, key, value);
+    (0, import_lodash_es.set)(this.config.state, key, value);
   }
   static get() {
     return this.config.state;
   }
   static reset() {
-    (0, import_lodash.set)(this.config, "state", (0, import_config.getDefaultConfig)());
+    (0, import_lodash_es.set)(this.config, "state", (0, import_config.getDefaultConfig)());
   }
 };
 Config.config = {

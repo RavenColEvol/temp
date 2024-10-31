@@ -26,7 +26,7 @@ __export(mouseHover_exports, {
   showCustomCursor: () => showCustomCursor
 });
 module.exports = __toCommonJS(mouseHover_exports);
-var import_lodash = require("lodash");
+var import_lodash_es = require("lodash-es");
 var import_getCsDataOfElement = require("../utils/getCsDataOfElement.cjs");
 var import_multipleElementAddButton = require("../utils/multipleElementAddButton.cjs");
 var import_generateCustomCursor = require("../generators/generateCustomCursor.cjs");
@@ -103,7 +103,7 @@ function isContentEditable(target) {
   return false;
 }
 async function handleMouseHover(params) {
-  (0, import_lodash.throttle)(async (params2) => {
+  (0, import_lodash_es.throttle)(async (params2) => {
     const eventDetails = (0, import_getCsDataOfElement.getCsDataOfElement)(params2.event);
     const eventTarget = params2.event.target;
     if (!eventDetails) {

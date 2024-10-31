@@ -42,7 +42,7 @@ var import_visualBuilderPostMessage = __toESM(require("../utils/visualBuilderPos
 var import_icons = require("./icons/index.cjs");
 var import_loading = require("./icons/loading.cjs");
 var import_generateCustomCursor = require("../generators/generateCustomCursor.cjs");
-var import_lodash = require("lodash");
+var import_lodash_es = require("lodash-es");
 var import_visualBuilder = require("../visualBuilder.style.cjs");
 var import_CslpError = require("./CslpError.cjs");
 var import_errorHandling = require("../utils/errorHandling.cjs");
@@ -75,7 +75,7 @@ function FieldLabelWrapperComponent(props) {
   (0, import_compat.useEffect)(() => {
     const fetchData = async () => {
       setDisplayNamesLoading(true);
-      const allPaths = (0, import_lodash.uniqBy)(
+      const allPaths = (0, import_lodash_es.uniqBy)(
         [
           props.fieldMetadata,
           ...props.parentPaths.map((path) => {

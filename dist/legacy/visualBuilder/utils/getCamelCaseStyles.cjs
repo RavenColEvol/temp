@@ -23,10 +23,10 @@ __export(getCamelCaseStyles_exports, {
   default: () => getCamelCaseStyles
 });
 module.exports = __toCommonJS(getCamelCaseStyles_exports);
-var import_lodash = require("lodash");
+var import_lodash_es = require("lodash-es");
 function getCamelCaseStyles(styles) {
   return Object.keys(styles).reduce((acc, key) => {
-    acc[(0, import_lodash.camelCase)(key)] = styles[key];
+    acc[(0, import_lodash_es.camelCase)(key)] = styles[key];
     return acc;
   }, {});
 }

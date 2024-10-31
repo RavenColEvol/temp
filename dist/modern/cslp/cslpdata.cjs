@@ -34,7 +34,7 @@ __export(cslpdata_exports, {
   extractDetailsFromCslp: () => extractDetailsFromCslp
 });
 module.exports = __toCommonJS(cslpdata_exports);
-var import_lodash = require("lodash");
+var import_lodash_es = require("lodash-es");
 var import_configManager = __toESM(require("../configManager/configManager.cjs"), 1);
 var import_editButton = require("../livePreview/editButton/editButton.style.cjs");
 function extractDetailsFromCslp(cslpValue) {
@@ -60,8 +60,8 @@ function extractDetailsFromCslp(cslpValue) {
   }
   const instancePathWithInstance = fieldPath.join(".");
   const calculatedPath = fieldPath.filter((path) => {
-    const isEmpty = (0, import_lodash.isNil)(path);
-    const isNumber = (0, import_lodash.isFinite)(+path);
+    const isEmpty = (0, import_lodash_es.isNil)(path);
+    const isNumber = (0, import_lodash_es.isFinite)(+path);
     return !isEmpty && !isNumber || false;
   });
   const multipleFieldMetadata = getMultipleFieldMetadata(
@@ -70,7 +70,7 @@ function extractDetailsFromCslp(cslpValue) {
     locale,
     fieldPath
   );
-  if ((0, import_lodash.isFinite)(+fieldPath[fieldPath.length - 1])) {
+  if ((0, import_lodash_es.isFinite)(+fieldPath[fieldPath.length - 1])) {
     fieldPath.pop();
   }
   return {
@@ -88,7 +88,7 @@ function extractDetailsFromCslp(cslpValue) {
   };
 }
 function getParentPathDetails(content_type_uid, entry_uid, locale, fieldPath) {
-  const index = (0, import_lodash.findLastIndex)(fieldPath, (path) => (0, import_lodash.isFinite)(+path));
+  const index = (0, import_lodash_es.findLastIndex)(fieldPath, (path) => (0, import_lodash_es.isFinite)(+path));
   if (index === -1) return null;
   const parentPath = fieldPath.slice(0, index);
   return {
@@ -108,10 +108,10 @@ function getMultipleFieldMetadata(content_type_uid, entry_uid, locale, fieldPath
     locale,
     fieldPath
   );
-  const index = (0, import_lodash.findLast)(fieldPath, (path) => (0, import_lodash.isFinite)(+path));
+  const index = (0, import_lodash_es.findLast)(fieldPath, (path) => (0, import_lodash_es.isFinite)(+path));
   return {
     parentDetails,
-    index: (0, import_lodash.isNil)(index) ? -1 : +index
+    index: (0, import_lodash_es.isNil)(index) ? -1 : +index
   };
 }
 function addCslpOutline(e, callback) {

@@ -34,7 +34,7 @@ __export(contentstack_live_preview_HOC_exports, {
 });
 module.exports = __toCommonJS(contentstack_live_preview_HOC_exports);
 var import_uuid = require("uuid");
-var import_lodash = require("lodash");
+var import_lodash_es = require("lodash-es");
 var import_config = require("../configManager/config.default.cjs");
 var import_configManager = __toESM(require("../configManager/configManager.cjs"), 1);
 var import_visualBuilder = require("../visualBuilder/index.cjs");
@@ -77,7 +77,7 @@ var _ContentstackLivePreview = class _ContentstackLivePreview {
     return import_configManager.default.get().hash;
   }
   static isInitialized() {
-    return !(0, import_lodash.isEmpty)(_ContentstackLivePreview.previewConstructors);
+    return !(0, import_lodash_es.isEmpty)(_ContentstackLivePreview.previewConstructors);
   }
   static initializePreview() {
     _ContentstackLivePreview.previewConstructors = {

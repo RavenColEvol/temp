@@ -33,7 +33,7 @@ __export(fieldSchemaMap_exports, {
   FieldSchemaMap: () => FieldSchemaMap
 });
 module.exports = __toCommonJS(fieldSchemaMap_exports);
-var import_lodash = require("lodash");
+var import_lodash_es = require("lodash-es");
 var import_visualBuilderPostMessage = __toESM(require("./visualBuilderPostMessage.cjs"), 1);
 var import_postMessage = require("./types/postMessage.types.cjs");
 var _FieldSchemaMap = class _FieldSchemaMap {
@@ -69,7 +69,7 @@ var _FieldSchemaMap = class _FieldSchemaMap {
     return ((_b = (_a = _FieldSchemaMap == null ? void 0 : _FieldSchemaMap.fieldSchema) == null ? void 0 : _a[contentTypeUid]) == null ? void 0 : _b[fieldCslp]) || null;
   }
   static hasFieldSchema(contentTypeUid, fieldCslp) {
-    return (0, import_lodash.has)(_FieldSchemaMap.fieldSchema, [contentTypeUid, fieldCslp]);
+    return (0, import_lodash_es.has)(_FieldSchemaMap.fieldSchema, [contentTypeUid, fieldCslp]);
   }
   /**
    * Checks if two field schemas are equal.
@@ -78,7 +78,7 @@ var _FieldSchemaMap = class _FieldSchemaMap {
    * @returns True if the field schemas are equal, false otherwise.
    */
   static areFieldSchemaEqual(firstFieldSchema, secondFieldSchema) {
-    return (0, import_lodash.isEqual)(firstFieldSchema, secondFieldSchema);
+    return (0, import_lodash_es.isEqual)(firstFieldSchema, secondFieldSchema);
   }
   /**
    * Sets the field schema for a given content type.

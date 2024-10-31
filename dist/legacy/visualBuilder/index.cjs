@@ -44,7 +44,7 @@ var import_getEntryIdentifiersInCurrentPage = require("./utils/getEntryIdentifie
 var import_visualBuilderPostMessage = __toESM(require("./utils/visualBuilderPostMessage.cjs"), 1);
 var import_postMessage = require("./utils/types/postMessage.types.cjs");
 var import_goober = require("goober");
-var import_lodash = require("lodash");
+var import_lodash_es = require("lodash-es");
 var import_preact = require("preact");
 var import_cslp = require("../cslp/index.cjs");
 var import_components = __toESM(require("./components/index.cjs"), 1);
@@ -124,7 +124,7 @@ var _VisualBuilder = class _VisualBuilder {
       });
     });
     this.mutationObserver = new MutationObserver(
-      (0, import_lodash.debounce)(
+      (0, import_lodash_es.debounce)(
         async () => {
           (0, import_updateFocussedState.updateFocussedStateOnMutation)(
             this.overlayWrapper,
@@ -137,7 +137,7 @@ var _VisualBuilder = class _VisualBuilder {
             )
           );
           const previousEmptyBlockParents = _VisualBuilder.VisualBuilderGlobalState.value.previousEmptyBlockParents;
-          if (!(0, import_lodash.isEqual)(emptyBlockParents, previousEmptyBlockParents)) {
+          if (!(0, import_lodash_es.isEqual)(emptyBlockParents, previousEmptyBlockParents)) {
             const noMoreEmptyBlockParent = previousEmptyBlockParents.filter(
               (x) => !emptyBlockParents.includes(x)
             );

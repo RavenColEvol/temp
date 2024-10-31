@@ -1,7 +1,7 @@
 import "../../chunk-5WRI5ZAA.js";
 
 // src/visualBuilder/listeners/mouseHover.ts
-import { throttle } from "lodash";
+import { throttle } from "lodash-es";
 import { getCsDataOfElement } from "../utils/getCsDataOfElement.js";
 import { removeAddInstanceButtons } from "../utils/multipleElementAddButton.js";
 import { generateCustomCursor } from "../generators/generateCustomCursor.js";
