@@ -64,7 +64,7 @@ function sendInitializeLivePreviewPostMessageEvent() {
       contentTypeUid,
       entryUid,
       windowType = ILivePreviewWindowType.PREVIEW
-    } = data;
+    } = data || {};
     if (contentTypeUid && entryUid) {
       setConfigFromParams({
         content_type_uid: contentTypeUid,

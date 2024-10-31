@@ -1,7 +1,7 @@
 import "../../chunk-5WRI5ZAA.js";
 
 // src/visualBuilder/utils/handleIndividualFields.ts
-import { debounce, throttle } from "lodash-es";
+import { debounce, throttle } from "lodash";
 import { VisualBuilder } from "../index.js";
 import {
   generatePseudoEditableElement,

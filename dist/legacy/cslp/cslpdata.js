@@ -1,7 +1,7 @@
 import "../chunk-5WRI5ZAA.js";
 
 // src/cslp/cslpdata.ts
-import { isNil, isFinite, findLastIndex, findLast } from "lodash-es";
+import { isNil, isFinite, findLastIndex, findLast } from "lodash";
 import Config from "../configManager/configManager.js";
 import { cslpTagStyles } from "../livePreview/editButton/editButton.style.js";
 function extractDetailsFromCslp(cslpValue) {

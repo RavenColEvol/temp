@@ -10,7 +10,7 @@ import visualBuilderPostMessage from "../utils/visualBuilderPostMessage.js";
 import { CaretIcon, InfoIcon } from "./icons/index.js";
 import { LoadingIcon } from "./icons/loading.js";
 import { getFieldIcon } from "../generators/generateCustomCursor.js";
-import { uniqBy } from "lodash-es";
+import { uniqBy } from "lodash";
 import { visualBuilderStyles } from "../visualBuilder.style.js";
 import { CslpError } from "./CslpError.js";
 import { hasPostMessageError } from "../utils/errorHandling.js";

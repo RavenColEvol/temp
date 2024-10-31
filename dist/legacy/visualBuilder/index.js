@@ -18,7 +18,7 @@ import { getEntryIdentifiersInCurrentPage } from "./utils/getEntryIdentifiersInC
 import visualBuilderPostMessage from "./utils/visualBuilderPostMessage.js";
 import { VisualBuilderPostMessageEvents } from "./utils/types/postMessage.types.js";
 import { setup } from "goober";
-import { debounce, isEqual } from "lodash-es";
+import { debounce, isEqual } from "lodash";
 import { h } from "preact";
 import { extractDetailsFromCslp } from "../cslp/index.js";
 import initUI from "./components/index.js";

@@ -1,7 +1,7 @@
 import "../../chunk-5WRI5ZAA.js";
 
 // src/visualBuilder/utils/fieldSchemaMap.ts
-import { has, isEqual } from "lodash-es";
+import { has, isEqual } from "lodash";
 import visualBuilderPostMessage from "./visualBuilderPostMessage.js";
 import { VisualBuilderPostMessageEvents } from "./types/postMessage.types.js";
 var _FieldSchemaMap = class _FieldSchemaMap {

@@ -4,7 +4,7 @@ import "../chunk-5WRI5ZAA.js";
 import { deepSignal } from "deepsignal";
 import { getDefaultConfig, getUserInitData } from "./config.default.js";
 import { handleInitData } from "./handleUserConfig.js";
-import { has as lodashHas, set as lodashSet } from "lodash-es";
+import { has as lodashHas, set as lodashSet } from "lodash";
 var Config = class {
   static replace(userInput = getUserInitData()) {
     handleInitData(userInput);

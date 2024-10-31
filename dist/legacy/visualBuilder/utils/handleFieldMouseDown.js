@@ -1,7 +1,7 @@
 import "../../chunk-5WRI5ZAA.js";
 
 // src/visualBuilder/utils/handleFieldMouseDown.ts
-import { throttle } from "lodash-es";
+import { throttle } from "lodash";
 import { sendFieldEvent } from "../generators/generateOverlay.js";
 import {
   ALLOWED_INLINE_EDITABLE_FIELD,

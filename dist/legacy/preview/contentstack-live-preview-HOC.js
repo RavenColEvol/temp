@@ -2,7 +2,7 @@ import "../chunk-5WRI5ZAA.js";
 
 // src/preview/contentstack-live-preview-HOC.ts
 import { v4 as uuidv4 } from "uuid";
-import { isEmpty } from "lodash-es";
+import { isEmpty } from "lodash";
 import { getUserInitData } from "../configManager/config.default.js";
 import Config, { updateConfigFromUrl } from "../configManager/configManager.js";
 import { VisualBuilder } from "../visualBuilder/index.js";
